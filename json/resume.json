@@ -1,0 +1,173 @@
+{
+    "company": [
+        {
+            "employer": "Saicon Consultant",
+            "location": "( Nokia / Microsoft ) Burlington, Massachusetts",
+            "start": "December 2013",
+            "end": "Current",
+            "entry": [
+                {
+                    "title": "intern",
+                    "description": "Worked for Data and Analytics. Primarily worked with Amazon Web Services (AWS) and Jenkins Servers in a Horizontal Engineering push for continuous integration. Wrote configuration scripts and PHP command line applications to automate deployment alongside a department tool (citool). System would perform unit tests, deploy to an instance, generate an AMI, and then perform live testing. Developed a front end for a department web application (sigyn). Attended the 2014 Boston Jenkins User Conference. Currently working on a skype application for the MTK mobile form platform."
+                }
+            ]
+        },
+        {
+            "employer": "Volt Services Group",
+            "location": "( Intel ) Hudson, Massachusetts",
+            "start": "October 2010",
+            "end": "May 2014",
+            "entry": [
+                {
+                    "title": "Debug Technician",
+                    "description": "Ran CTH, Summit, Sapphire, PPV, OLB, and LaserMark testers on the Xeon and Itanium projects for Intel at the Massachusetts Validation Center (MVC)."
+                },
+                {
+                    "title": "Department Website",
+                    "description": "Developed in PHP, JavaScript, CSS, HTML, jQuery, and MySQL; created a search engine, broken link checker, and a favorites menu."
+                },
+                {
+                    "title": "eWhiteboard Website",
+                    "description": "Developed a work request application for MVC Power On, Developed in: PHP, jQuery, JavaScript, CSS, HTML, and MySQL; enabled unit tracking, shift pass-down tool, user management, work log, Ajax updates, email, and documentation."
+                },
+                {
+                    "title": "Pass-down Tool",
+                    "description": "Created an application in Visual Basic that sent emails and scraped websites."
+                }
+            ]
+        },
+        {
+            "employer": "University of Massachusetts Lowell",
+            "location": "Lowell, Massachusetts",
+            "start": "Aug 2014",
+            "end": "Current",
+            "entry": [
+                {
+                    "title": "Grader",
+                    "description": "Graded assignments and exams for Computing I Spring '13– (Sarita Bassil)"
+                },
+                {
+                    "title": "Computer Science Tutor",
+                    "description": "Tutored twice a week, assisted in the classroom and via email, led study sessions, and proctored exams. Computing I: Fall '12 (Darrel Lipman), Spring '13 (Sarita Bassil)"
+                },
+                {
+                    "title": "Research Intern",
+                    "description": "Worked on the Computational Sensing Research (CSR) Project under Dr. Yu Cao. I was in charge of the cloud components and maintained an AWS EC2 Windows server instance that held a PHP / MySQL application. Application used HTTPS, and I developed the application framework to allow for PHP widgets that were both configurable through configuration files or arguments, a restful Json API, secure session based user authentication, and a rotating token based authentication for devices. Spring – Summer ’14 (Yu Cao)."
+                }
+            ]
+        },
+        {
+            "employer": "Analog Devices",
+            "location": "Wilmington, Massachusetts",
+            "start": "January 2003",
+            "end": "January 2005",
+            "entry": [
+                {
+                    "title": "Engineering Intern",
+                    "description": "Analyzed wafers, created Pareto, wrote reports, and tested integrated circuits."
+                }
+            ]
+        },
+        {
+            "employer": "www.astuml.org",
+            "location": "Lowell, Massachusetts",
+            "start": "January 2013",
+            "end": "Current",
+            "entry": [
+                {
+                    "title": "Web master",
+                    "description": "Ongoing, developing and maintaining a sorority chapter website on an IIS server written in PHP, CSS, jQuery, JavaScript, HTML. Website contains a chapter history time-line, an email form, updating membership composite, calendar event feed"
+                }
+            ]
+        }
+    ],
+    "education": [
+    {
+        "institution": "University of Massachusetts Lowell",
+        "location" : "Lowell, Massachusetts",
+        "major": "Computer Science",
+        "minor": [
+            "Physics"
+        ],
+        "graduation" : "Expected May 2015" ,
+        "organizations": [
+            {
+                "name": "Association for Computing Machinery",
+                "start": "February 2013",
+                "end": "December 2013",
+                "description": "Held the position Director of Partnerships and Public Relations, maintained contact with industry and searched for speakers on engineering topics."
+            }
+        ]
+    }
+    ]    ,
+    "languages": {
+        "major": [
+            "C",
+            "C++",
+            "CSS",
+            "HTML",
+            "JavaScript",
+            "jQuery (Language and UI libraries )",
+            "PHP",
+            "MySQL",
+            "Ajax"
+        ],
+        "minor": [
+            "Python",
+            "Shell scripting",
+            "Visual Basic",
+            "Java",
+            "Assembly"
+        ]
+    },
+    "technologies": {
+        "os": [
+            "Windows",
+            "Linux",
+            "Centos6",
+            "Ubuntu"
+        ],
+        "software": [
+            "Netbeans",
+            "Visual Studio",
+            "IIS",
+            "Apache",
+            "Jenkins Server" ,
+            "Cygwin",
+            "Git",
+            "Geany IDE",
+            "GDB",
+            "MS Office",
+            "Adobe CS5",
+            "phpMyAdmin",
+            "VMWare"
+        ]
+    },
+    "distinctions": [
+        {
+            "title": "US Patent #7051664",
+            "description": "Retrieval Mechanism for an Underwater Vehicle",
+            "date": "2006"
+        },
+        {
+            "title": "MIT State Science Fair",
+            "description": "First prize (Engineering), Fredrick P. Fish Patent Award",
+            "date": "2003"
+        },
+        {
+            "title": "WPI Science Fair",
+            "description": "Third prize (Engineering)",
+            "date": "2003"
+        },
+        {
+            "title": "Boy Scouts of America",
+            "description": "Eagle Scout",
+            "date": "2002"
+        },
+        {
+            "title": "Foreign Languages",
+            "description": "Fluent in English and Spanish.",
+            "date": null
+        }
+    ]
+}
