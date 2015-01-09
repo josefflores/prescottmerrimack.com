@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+        <!--
+            File:   contact.html
+            91.461 Assignment 7
+
+            Jose F. Flores, UMass Lowell Computer Science Student
+               jose_flores@student.uml.edu
+
+            Copyright (c) 2014 by Jose F. Flores. All rights reserved. May be
+               freely copied or excerpted for educational purposes with credit
+               to the author.
+
+            Created by JFF on November 4, 2014 at 9:52
+        -->
+        <title>Our Staff</title>
+
+    </head>
+
+    <body>
+
+        <!-- This is the contact page -->
+        <div class="article">
+
+            <!-- page title -->
+            <div class="article-title">
+                Contact
+            </div>
+
+            <!-- content of page -->
+            <div class="article-content">
+
+                <!-- description of when to use form -->
+                <p>
+                    If you would like to set up a personalized consultation please use the form below.
+                </p>
+
+                <!-- Email Form -->
+                <form id="contact" name="contact">
+
+                    <!-- User name input -->
+                    <span class="wide">
+                        <label class="wide" > Your name</label>
+                        <input type="text" id="contact-form-name" name="contact-form-name"/>
+                    </span>
+
+                    <!-- User email input -->
+                    <span class="wide">
+                        <label class="wide" > Your email address</label>
+                        <input type="text" id="contact-form-email" name="contact-form-email"/>
+                    </span>
+
+                    <!-- Email subject input -->
+                    <span class="wide">
+                        <label class="wide" > Subject</label>
+                        <input type="text" id="contact-form-subject" name="contact-form-subject"/>
+                    </span>
+
+                    <!-- User content input -->
+                    <span class="wide">
+                        <label class="wide" > Body</label>
+                        <textarea class="wide"  id="contact-form-content"  name="contact-form-content"> </textarea>
+                    </span>
+
+                    <!-- submission button -->
+                    <span class="wide">
+                        <button type="submit" > Submit Email </button>
+                        <span id="notice"></span>
+                    </span>
+
+                </form>
+
+                <!-- alternate form of contact for website issues -->
+                <p>
+                    If you would like to report a problem with the web page please contact the webaster at <a href="mailto:jflores@cs.uml.edu">jflores@cs.uml.edu</a>.
+                </p>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>

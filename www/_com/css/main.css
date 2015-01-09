@@ -1,230 +1,401 @@
 /**
- *  File: main.css
- *  91.461 Assignment: Creating Your First Web Page
+ *  File:   assignment7.css
+ *  91.461 Assignment:   Creating Your First Web Page
  *  Jose F. Flores, UMass Lowell Computer Science Student
  *      jose_flores@student.uml.edu
  *  Copyright (c) 2014 by Jose F. Flores. All rights reserved. May be
  *      freely copied or excerpted for educational purposes with credit
  *      to the author.
  *
- *  updated by JFF on September 21, 2014 at 11:30
- *      Finished styling for assignment 3 submission
- *      Added styling for item lists and source code viewing
- *  updated by JFF on September 14, 2014 at 18:02
- *      Finished styling assignment repository
+ *  updated by JFF on November 5, 2014 at 11:30
+ *      Finished styling for assignment 7 submission
  */
 
-
-html,
-body {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-
+/**
+ *  A dividing section within the content, it essentially acts like a
+ *  wrapper to hold everything in place
+ */
+.article {
+    margin: 10px 0 0;
+    padding: 5px;
+    width: 740px;
 }
 
-body {
-    color: #000;
-    font-family: 'Cinzel', serif;
+/**
+ *  Setting padding for the article-content and wide classes
+ *  article-content break apart the article into subsections.
+ *  They are uniquely themed entries
+ */
+.article-content,
+.wide {
+    padding: 5px 0;
 }
 
-
-a {
-    color : #910000 ;
-    text-decoration: none;
+/**
+ *  Setting indentation for the article content elements, everything is
+ *  indented to make the titles stand out
+ */
+.article-content-body,
+.article-content-date {
+    margin-left: 30px;
 }
 
-h1 , h2 , h3 , h4 , h5 , h6 {
-    font-family: 'Cinzel', serif;
+/**
+ *  Dates are presented differently to make them not be the focus of the
+ *  article heading but still be present.
+ */
+.article-content-date {
+    font-style: italic;
+    padding: 15px 0 0 0;
+    color: #444;
+    font-size: 12px;
+}
+
+/**
+ *  Standardizing the way images are presented within the articles
+ */
+.article-image {
+    float: right;
+    margin: 5px 0 10px 10px;
+    width: 300px;
+}
+
+/**
+ *  Determining what elements have the red burgundy background.
+ */
+.article-image,
+.horizontal,
+.employee-image img,
+button {
+    background: #910000;
+}
+
+/**
+ *  Adjusting spacing of article heading elements
+ */
+.article-title,
+.employee-name,
+.employee-title {
+    padding: 0 0 10px 0;
+}
+
+/**
+ *  Setting size properties of the text for titles
+ */
+.article-title,
+.employee-title,
+.article-content-title {
+    font-size: 18px;
     font-weight: 700;
-    margin: 0px;
-    padding: 0px;
-}
-
-
-/**
- *  This is a wrapper, it allows for positioning of the document content.
- */
-div.wrapper {
-    height: 100%;
-    min-width: 800px;
-    width: 100%;
 }
 
 /**
- *  The header bar of the page. The header is always present and allows
- *  content to hide behind it as it scrolls by. This is called a sticky
- *  header. I have added a shadow effect to make the header look like it
- *  is a z-index above the content
+ *  This element is an expanding column that fills with the loaded pages
  */
-div.header {
-    background: #ffffff;
-    box-shadow: 0px 1px 10px #666;
-    height: 100px;
-    left: 0px;
-    min-width: 800px;
-    position: fixed;
-    top: 0px;
-    width: 100%;
-}
-
-/**
- *  The title wrapper to assist in positioning of the page title. I am
- *  using this to indent the heading and allow for an icon on the left
- *  side of the header.
- */
-div.title-wrapper {
-    color: #ffffff;
-}
-
-/*
- * A class of image to be used for the logo.
- */
-img.logo {
-    float: left;
-    height: 100px;
-}
-
-/**
- *  The container holding the main content of the page. The padding fixes
- *  the sticky header and footer from covering up content.
- */
-div.content {
-    color: #000000;
-    font-size: 14px;
-    padding: 190px 0px 50px 0px; /*  */
-    width: 800px;
+.content {
     background: #fff;
     border-bottom: 10px solid #910000;
-    box-shadow: 1px 1px 5px #333;
+    color: #000;
+    font-size: 14px;
+    margin-left: 20px;
+    padding: 140px 0 50px;
+    width: 800px;
 }
 
 /**
- *  This wrapper allows for smooth contraction of the content went
- *  browsers are resized.
+ *  Allows for expansion of content
  */
-div.content-wrapper {
+.content-wrapper {
     overflow: auto;
     padding: 0 25px;
 }
 
+/**
+ *  Sub article seperation via a border
+ */
+.employee,
+.article-content {
+    border-bottom: 3px solid #910000;
+}
 
 /**
- *  This container holds the title elements.
+ *  Indentation to allow for a picture
  */
-div.header-right {
-    margin-left: 75px;
+.employee-content {
+    margin: 10px 0 0 150px;
 }
 
-/*  HORIZONTAL MENU */
-nav.horizontal {
-    background: #ffffff;
-
-    /* margin: 0px 0px 0px 0px; */
-    /* padding: 0px 0px 0px 0px; */
-    width: 100%;
-    float: left;
-    background: #910000;
-}
-nav.horizontal > ul {
-    height: 30px;
-    line-height: 30px;
-    margin: 0px;
-    padding: 0px 0px 0px 25px;
-    list-style-type: none;
-    width: 100%;
-     box-shadow: 1px 1px 3px #000;
-}
-nav.horizontal > ul > li {
-    float: left;
-}
-nav.horizontal > ul > li:first-child {}
-nav.horizontal > ul > li > a {
-color: #fff ;
-    display: block;
-    padding: 0px 10px;
-}
-nav.horizontal > ul > li > a:hover {
-    text-decoration: underline;
-}
-nav.horizontal > ul > li > a:active {
-    background: #ffffff;
-    color : #910000 ;
-}
-nav.horizontal > ul > li > a.selected:hover {
-     text-decoration: none;
+/**
+ *  Indentation of the picture container
+ */
+.employee-image {
+    margin-left: 20px;
 }
 
-/* VERTICAL MENU */
-nav.vertical {
-    float: left;
-    margin-left: 110px;
-    width: 300px;
-    background: #ffffff;
-}
-nav.vertical > ul {
-    float: left;
-    list-style-type: none;
-    margin: 0px;
-    overflow-wrap: break-word;
-    padding-right: 20px;
-    padding: 0px;
-    width: 100%;
-}
-nav.vertical > ul > li > a {
-    background: #ffffff;
-    border-left: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-    border-top: 1px solid #ddd;
-    display: block;
-    padding: 3px;
-    width: 100%;
- }
-nav.vertical > ul > li:last-child a {
-    border-bottom: 1px solid #dddddd;
-}
-nav.vertical > ul > li > a:hover {
-    background: #eeeeee;
-}
-nav.vertical > ul > li > a:active {
-    background: #ffffff;
+/**
+ *  Dimension of the picture plus some spacing around it
+ */
+.employee-image img {
+    height: 100px;
+    margin: 10px;
+    width: 100px;
 }
 
-/* FOOTER */
-div.footer {
-    background: #fff ;
-    border-top: 1px solid #999999;
-    bottom: 0px;
+/**
+ *  Stopping the border on the last elements of repeating sub sections
+ */
+.employee:last-child,
+.article-content:last-child,
+button {
+    border: none;
+}
+
+/**
+ *  Sticky footer to the bottom
+ */
+.footer {
+    background: #fff;
+    border-top: 3px solid #910000;
+    bottom: 0;
+    box-shadow: 0 -1px 5px #444;
+    font-size: 12px;
+    font-weight: 700;
     height: 40px;
-    left: 0px;
+    left: 0;
+    line-height: 40px;
     min-width: 800px;
     position: fixed;
     text-align: center;
     width: 100%;
 }
-div.notice,
-div.copyright {
+
+/**
+ *  Dimension of the header
+ */
+.header {
+    background: #fff;
+    height: 100px;
+    min-width: 800px;
+    width: 100%;
+}
+
+/**
+ *  Setting up fixed elements to stick to the top left corner
+ */
+.header,
+.image-bg {
+    left: 0;
+    position: fixed;
+    top: 0;
+}
+
+/**
+ *  Navigation menu
+ */
+.horizontal > ul {
+    height: 30px;
+    line-height: 30px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 0 25px;
+    width: 100%;
+}
+
+/**
+ *  Styling navigation menu link states
+ */
+.horizontal > ul > li > a,
+.horizontal > ul > li > a:active {
+    color: #fff;
+    display: block;
+    padding: 0 10px;
+}
+
+.horizontal > ul > li > a:hover {
+    text-decoration: underline;
+}
+
+.horizontal > ul > li > a:active {
+    color: #fff;
+    text-decoration: none;
+}
+
+/**
+ *  Styling the background image so that it does not scroll with the page
+ *  and looks like it is stationary
+ */
+.image-bg {
+    background: url(http://www.josefflores.com/gui/_com/img/a7/bg.jpg) center;
+    bottom: 0;
+    height: 100%;
+    right: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+/**
+ *  Styling the title image dimension
+ */
+.logo {
+    height: 100px;
+}
+
+/**
+ *  The notice is found in the form ans is used to display success or
+ *  error messages
+ */
+#notice {
+    padding: 5px;
+    font-size: 16px;
+}
+
+/**
+ *  The notice class style the notice id to show in reverse coloring
+ *  than if the warning class had been applied
+ */
+.notice {
+    color: #910000;
+}
+
+/**
+ *  Standardizing font-sizes
+ */
+.notice,
+.copyright {
     font-size: 10px;
 }
 
-
-div.article {
-    padding:5px;
-    margin:10px 0px 0px 0px;
-    background: #fff ;
-    width:740px;
+/**
+ *  This class is used by jquery to minimize the jumping seen when
+ *  loading new pages
+ */
+.overflow-y {
+    overflow-y: scroll;
 }
 
-.image-bg {
-    left: 0px;
-    width: 100%;
+/**
+ *  This class wraps around the title to allow for expansion in the future
+ */
+.title-wrapper {
+    color: #fff;
     height: 100%;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
+}
+
+/**
+ *  Setting up the dimension of wide elements
+ */
+.wide,
+.horizontal,
+.wrapper {
+    width: 100%;
+}
+
+/**
+ *  Setting up minimum viewing widths
+ */
+.wrapper {
+    min-width: 860px;
+}
+
+/**
+ *  Setting up red / burgundy colored elements
+ */
+a,
+.footer,
+.employee-title,
+.article-content-title {
+    color: #910000;
+    text-decoration: none;
+}
+
+button {
+    color: #fff;
+    margin: 10px 0;
+    padding: 5px 10px;
+    border:none;
+}
+
+/**
+ *  Setting up universal shadowing effect
+ */
+button,
+.article-image,
+.header,
+.content,
+.horizontal > ul,
+.employee-image img {
+    box-shadow: 1px 1px 3px #333;
+}
+
+/**
+ *  Styling element font type
+ */
+button,
+nav,
+.article-title,
+.article-content-title,
+.employee-title,
+.footer {
+    font-family: Cinzel, serif;
+}
+
+/**
+ *  Designing form look to have burgundy bordering
+ */
+form {
+    border: 3px solid #910000;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+/**
+ *  Positioning elements
+ */
+form,
+.logo,
+.horizontal,
+.horizontal > ul > li,
+.employee-image img,
+.article-content,
+.wide {
+    float: left;
+}
+
+/**
+ *  Giving page original styling
+ */
+html,
+body {
+    color: #000;
+    font-family: Ubuntu;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/**
+ *  Styling input borders
+ */
+input,
+textarea {
+    border: 1px solid #aaa;
+    padding: 5px;
+}
+
+/**
+ *  Making a fixed input text box
+ */
+textarea {
+    height: 100px;
+    resize: none;
+    width: 100%;
+}
+
+/**
+ *  Error class for inputs
+ */
+.warning {
+    background: #910000;
+    color: #fff;
 }

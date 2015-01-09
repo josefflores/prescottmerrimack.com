@@ -23,6 +23,7 @@
     $A[ 'D_JSON' ]  = $A[ 'D_ROOT' ] . 'json' . $A[ 'D_SLASH' ] ;   //  json file directory
     $A[ 'D_PDF' ]   = $A[ 'D_ROOT' ] . 'pdf' . $A[ 'D_SLASH' ] ;    //  pdf file directory
     $A[ 'D_PSD' ]   = $A[ 'D_ROOT' ] . 'psd' . $A[ 'D_SLASH' ] ;    //  psd file directory
+    $A[ 'D_HTML' ]  = $A[ 'D_ROOT' ] . 'html' . $A[ 'D_SLASH' ] ;    //  psd file directory
 
     //  Relative web paths
     $A[ 'W_COM' ]   = $A[ 'W_ROOT' ] . '_com' . $A[ 'W_SLASH' ] ;   //  common files directory

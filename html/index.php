@@ -13,33 +13,18 @@
 
 
     // File Access Guard
-    define( 'CONTENT_GUARD' , TRUE ) ;
 
     /**
      *  INIT
      */
 
-    // Find Directory Root
-    $A[ 'DIR' ] = __DIR__ ;
-    $tmp = explode( 'www' , $A[ 'DIR' ] ) ;
-    $A[ 'D_ROOT' ] = $tmp[ 0 ] ;
-
-    // Load Framework
-    include( $A[ 'D_ROOT' ] . 'php/class/framework.php' ) ;
-    $F = new framework( $A ) ;
-    $A = $F->init( ) ;
-
-    /**
-     *  INCLUDES
-     */
-    include( $A[ 'D_ROOT' ] . 'php/_includes.php' ) ; // Global Includes
 
     /**
      *  PAGE CALLING
      */
 
     //  Set content for index
-    $A[ 'CONTENT' ] = 'content.php' ;
+    $A[ 'CONTENT' ] = $_GET[ 'file' ] ;
 
     //  Begin page processing
     include( $A[ 'CONTENT' ] ) ;
